@@ -25,4 +25,5 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('articles/', include('articles.urls')),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', include ('pages2.urls')),
 ]

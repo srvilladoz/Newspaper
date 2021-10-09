@@ -4,5 +4,5 @@ from accounts.forms import CustomUserCreationForm
 
 
 class SignUpView(CreateView):
-    form = CustomUserCreationForm
+    form_class = CustomUserCreationForm
     template_name = "registration/signup.html"
